@@ -1,5 +1,5 @@
 const app = require('./app');
-const debug = require('debug')('roi-frontend:server');
+// const debug = require('debug')('roi-frontend:server');
 const http = require('http');
 const DEFAULT_PORT = 8080;
 
@@ -80,7 +80,8 @@ function onListening() {
     const bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port;
-    debug('Listening on ' + bind);
+    // debug('Listening on ' + bind);
 }
 
 module.exports = server;
+// test test
